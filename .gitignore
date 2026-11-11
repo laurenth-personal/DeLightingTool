@@ -43,3 +43,4 @@ sysinfo.txt
 /Assets/Editor Default Resources/Icons/AppFramework
 /Assets/Editor Default Resources/Icons/AppFramework.meta
 Logs
+.DS_Store
