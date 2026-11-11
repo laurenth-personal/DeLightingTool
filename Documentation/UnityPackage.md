@@ -1,23 +1,19 @@
-# De-Lighting Tool
+# Unity Package Manager installation
 
-The De-Lighting Tool removes lighting information from textures in a photogrammetry asset pipeline.
+Install this repository in Unity through **Window > Package Manager > + > Add package from git URL...** using:
 
-## Install with Unity Package Manager
+```text
+https://github.com/laurenth-personal/DeLightingTool.git
+```
 
-1. In Unity, open **Window > Package Manager**.
-2. Click **+ > Add package from git URL...**.
-3. Enter `https://github.com/laurenth-personal/DeLightingTool.git`.
-4. After the package is installed, open the package in Package Manager, expand **Samples**, and import **Rock01 Data** to add the sample archive to your project.
-5. Extract the imported `DeLighting-Tool-Data-Rock01.zip` and import its contents into the Unity project as described by the included sample files.
-6. Open the tool from **Window > Delighting Tool**.
+The package manifest is at the repository root. The existing Unity project assets under `Assets/` are included with the package; the Editor extension opens from **Window > Delighting Tool**.
 
-The package includes the editor tool, shaders, GUI helpers, and documentation. The sample is optional and is not required to use the tool with your own photogrammetry textures.
+## Rock01 sample
 
-The project was developed with Unity `6000.3.25f1`. The original project documentation lists compatibility from Unity 2017.1; older Unity versions may need compatibility adjustments.
+The package manifest exposes `Documentation/` as the **Rock01 Sample Data** UPM sample. In Package Manager, select the package and click **Import** beside that sample. Unity copies the existing `DeLighting-Tool-Data-Rock01.zip` into the project under `Assets/Samples/De-Lighting Tool/1.0.0/Documentation/`. Extract the ZIP and use the sample assets with the tool.
 
-## More information
+The sample is optional. The tool requires compute-shader-capable hardware.
 
-- [Tool documentation](Assets/DeLightingTool/Documentation/De-LightingTool.pdf)
-- [Unity blog post](https://labs.unity.com/article/experimental-feature-de-lighting-tool)
-- [Video overview](https://www.youtube.com/watch?v=Mo96vqMqnwA&feature=youtu.be)
-- [Unity Experimental forum discussion](https://forum.unity3d.com/threads/de-lighting-tool.482133/)
+## Compatibility
+
+The repository project is currently developed with Unity `6000.3.25f1`. The original README lists compatibility from Unity 2017.1; editor API differences in older Unity versions may require adjustments.
