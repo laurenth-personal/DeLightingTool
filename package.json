@@ -1,0 +1,26 @@
+{
+  "name": "com.laurenth.delighting-tool",
+  "version": "1.0.0",
+  "displayName": "De-Lighting Tool",
+  "description": "Unity Editor tool for removing lighting information from textures in a photogrammetry asset pipeline.",
+  "unity": "2017.1",
+  "keywords": [
+    "photogrammetry",
+    "de-lighting",
+    "texture",
+    "lighting",
+    "editor"
+  ],
+  "author": {
+    "name": "Unity Technologies",
+    "email": "support@unity3d.com"
+  },
+  "license": "MIT",
+  "samples": [
+    {
+      "displayName": "Rock01 Sample Data",
+      "description": "Sample photogrammetry data for the De-Lighting Tool. The original sample archive is kept in Documentation/DeLighting-Tool-Data-Rock01.zip and is exposed as a Package Manager sample.",
+      "path": "Samples~/Rock01"
+    }
+  ]
+}
