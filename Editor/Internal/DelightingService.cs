@@ -20,13 +20,13 @@ namespace UnityEditor.DelightingInternal
 
         ComputeMaterialLibrary library = UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>();
         static ComputeShader s_LUTGatherArrayComputeShader = null;
-        static ComputeShader kLUTGatherArrayComputeShader { get { return s_LUTGatherArrayComputeShader ?? (s_LUTGatherArrayComputeShader = UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().LUTArrayGather); } }
+        static ComputeShader kLUTGatherArrayComputeShader { get { return s_LUTGatherArrayComputeShader ?? (s_LUTGatherArrayComputeShader = (ComputeShader)Resources.Load("LUTArrayGather")); } }
         static ComputeShader s_LatLongArrayGatherComputeShader = null;
-        static ComputeShader kLatLongArrayGatherComputeShader { get { return s_LatLongArrayGatherComputeShader ?? (s_LatLongArrayGatherComputeShader = UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().LatLongArrayGather); } }
+        static ComputeShader kLatLongArrayGatherComputeShader { get { return s_LatLongArrayGatherComputeShader ?? (s_LatLongArrayGatherComputeShader = (ComputeShader)Resources.Load("LatLongArrayGather")); } }
         static ComputeShader s_LatLongAverageComputeShader = null;
-        static ComputeShader kLatLongAverageComputeShader { get { return s_LatLongAverageComputeShader ?? (s_LatLongAverageComputeShader ?? UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().LatLongAverage); } }
+        static ComputeShader kLatLongAverageComputeShader { get { return s_LatLongAverageComputeShader ?? (s_LatLongAverageComputeShader ?? (ComputeShader)Resources.Load("LatLongAverage")); } }
         static ComputeShader s_CleanBufferShader = null;
-        static ComputeShader kCleanBufferShader { get { return s_CleanBufferShader ?? (s_CleanBufferShader ?? UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().CleanBufer); } }
+        static ComputeShader kCleanBufferShader { get { return s_CleanBufferShader ?? (s_CleanBufferShader ?? (ComputeShader)Resources.Load("CleanBuffer")); } }
 
 
         static Material s_PreviewMaterial = null;
