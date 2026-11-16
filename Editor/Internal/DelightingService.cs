@@ -18,15 +18,15 @@ namespace UnityEditor.DelightingInternal
         internal static string kDefaultPositionTextureSuffix = "_position";
         internal static string kDefaultMaskTextureSuffix = "_mask";
 
-
+        ComputeMaterialLibrary library = UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>();
         static ComputeShader s_LUTGatherArrayComputeShader = null;
-        static ComputeShader kLUTGatherArrayComputeShader { get { return s_LUTGatherArrayComputeShader ?? (s_LUTGatherArrayComputeShader = (ComputeShader)EditorGUIUtility.LoadRequired("Delighter/LUTArrayGather.compute")); } }
+        static ComputeShader kLUTGatherArrayComputeShader { get { return s_LUTGatherArrayComputeShader ?? (s_LUTGatherArrayComputeShader = UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().LUTArrayGather); } }
         static ComputeShader s_LatLongArrayGatherComputeShader = null;
-        static ComputeShader kLatLongArrayGatherComputeShader { get { return s_LatLongArrayGatherComputeShader ?? (s_LatLongArrayGatherComputeShader = (ComputeShader)EditorGUIUtility.LoadRequired("Delighter/LatLongArrayGather.compute")); } }
+        static ComputeShader kLatLongArrayGatherComputeShader { get { return s_LatLongArrayGatherComputeShader ?? (s_LatLongArrayGatherComputeShader = UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().LatLongArrayGather); } }
         static ComputeShader s_LatLongAverageComputeShader = null;
-        static ComputeShader kLatLongAverageComputeShader { get { return s_LatLongAverageComputeShader ?? (s_LatLongAverageComputeShader ?? (ComputeShader)EditorGUIUtility.LoadRequired("Delighter/LatLongAverage.compute")); } }
+        static ComputeShader kLatLongAverageComputeShader { get { return s_LatLongAverageComputeShader ?? (s_LatLongAverageComputeShader ?? UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().LatLongAverage); } }
         static ComputeShader s_CleanBufferShader = null;
-        static ComputeShader kCleanBufferShader { get { return s_CleanBufferShader ?? (s_CleanBufferShader ?? (ComputeShader)EditorGUIUtility.LoadRequired("Delighter/CleanBuffer.compute")); } }
+        static ComputeShader kCleanBufferShader { get { return s_CleanBufferShader ?? (s_CleanBufferShader ?? UnityEngine.Object.FindFirstObjectByType<ComputeMaterialLibrary>().CleanBufer); } }
 
 
         static Material s_PreviewMaterial = null;
