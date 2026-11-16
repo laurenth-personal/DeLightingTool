@@ -7,11 +7,11 @@ namespace UnityEditor.Experimental.EditorGUITools
         [InitializeOnLoadMethod]
         static void Init()
         {
-            var targetDir = "Assets/Editor Default Resources/EditorGUITools";
+            var targetDir = "Editor Default Resources/EditorGUITools";
             if (!Directory.Exists(targetDir))
                 Directory.CreateDirectory(targetDir);
 
-            var editorResources = Directory.GetFiles("Assets/DeLightingTool/EditorGUITools/Editor Default Resources");
+            var editorResources = Directory.GetFiles("DeLightingTool/EditorGUITools/Editor Default Resources");
             for (int i = 0; i < editorResources.Length; i++)
             {
                 var from = editorResources[i].Replace(@"\\", "/");

@@ -7,11 +7,11 @@ namespace UnityEditor.DelightingInternal
         [InitializeOnLoadMethod]
         static void Init()
         {
-            var targetDir = "Assets/Editor Default Resources/Delighter";
+            var targetDir = "Editor Default Resources/Delighter";
             if (!Directory.Exists(targetDir))
                 Directory.CreateDirectory(targetDir);
 
-            var editorResources = Directory.GetFiles("Assets/DeLightingTool/Editor Default Resources");
+            var editorResources = Directory.GetFiles("DeLightingTool/Editor Default Resources");
             for (int i = 0; i < editorResources.Length; i++)
             {
                 var from = editorResources[i].Replace(@"\\", "/");
