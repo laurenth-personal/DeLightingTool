@@ -8,7 +8,7 @@ namespace UnityEditor.DelightingInternal
     {
         static class Content
         {
-            public static GUIContent autoComputeLabel { get { return EditorGUIUtility.IconContent("EditorGUITools/automatic.png", "Auto Compute"); } }
+            public static GUIContent autoComputeLabel { get { return EditorGUIUtility.IconContent("d_PreTextureAlpha", "Auto Compute"); } }
         }
 
         public override void OnGUI()

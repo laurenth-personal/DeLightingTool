@@ -38,7 +38,7 @@ namespace UnityEditor.Experimental
         {
             public static readonly GUIContent dropZoneLabel = new GUIContent("Drop assets here");
             static GUIContent s_DropIcon = null;
-            public static GUIContent dropIcon { get { return s_DropIcon ?? (s_DropIcon = new GUIContent((Texture2D)EditorGUIUtility.Load("EditorGUITools/DropFileIcon.png"))); } }
+            public static GUIContent dropIcon { get { return s_DropIcon ?? (s_DropIcon = new GUIContent((Texture2D)EditorGUIUtility.Load("d_Import@2x"))); } }
         }
 
         static Dictionary<int, bool> s_ShowFeedback = new Dictionary<int, bool>();

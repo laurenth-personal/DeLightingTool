@@ -8,9 +8,9 @@ namespace UnityEditor.DelightingInternal
     {
         static class Content
         {
-            public static GUIContent fitToWindowLabel { get { return EditorGUIUtility.IconContent("EditorGUITools/maximize.png", "Fit To Window"); } }
-            public static GUIContent exposureGizmoLabel { get { return EditorGUIUtility.IconContent("EditorGUITools/pick.png", "Reference Gizmo"); } }
-            public static GUIContent resetExposureLabel { get { return EditorGUIUtility.IconContent("EditorGUITools/reset.png", "Reset Reference"); } }
+            public static GUIContent fitToWindowLabel { get { return EditorGUIUtility.IconContent("ScaleTool", "Fit To Window"); } }
+            public static GUIContent exposureGizmoLabel { get { return EditorGUIUtility.IconContent("d_eyeDropper.Large", "Reference Gizmo"); } }
+            public static GUIContent resetExposureLabel { get { return EditorGUIUtility.IconContent("Refresh", "Reset Reference"); } }
         }
 
         public override void OnGUI()
