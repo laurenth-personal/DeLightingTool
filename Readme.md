@@ -10,9 +10,22 @@ Check the [video overview](https://www.youtube.com/watch?v=Mo96vqMqnwA&feature=y
 
 Discuss [Unity Experimental forum ](https://forum.unity3d.com/threads/de-lighting-tool.482133/)
 
-
 # Getting started
+## Install via Package Manager
+Please follow the instructions:
 
+- open Edit/Project Settings/Package Manager
+- add a new Scoped Registry (or edit the existing OpenUPM entry)
+      Name : Open UPM
+      URL : https://package.openupm.com
+      Scopes : com.laurenth
+- click Save or Apply
+- open Window/Package Management/Package Manager
+- in the left column, select "my registries / Open UPM"
+- In the second column you will see the packages available from this registry. Install the Unity Delighting Tool package.
+
+
+## Old instructions
   - Clone the repository
   - Download [Unity](https://store.unity.com)
   - Open the project with Unity (Compatible from Unity 2017.1 version)
