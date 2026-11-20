@@ -1,6 +1,7 @@
 # De Lighting tool
 
 The De-Lighting Tool is a tool to remove lighting information from textures in a photogrammetry asset pipeline.
+This tool was originally created by Cyril Jover and Frederic Vauchelles.
 
 Check the [documentation](https://github.com/Unity-Technologies/DeLightingTool/blob/master/Assets/DeLightingTool/Documentation/De-LightingTool.pdf) 
 
@@ -26,7 +27,7 @@ Please follow the instructions:
 
 
 ## Old instructions
-  - Clone the repository
+  - Clone the [original repository](https://github.com/Unity-Technologies/DeLightingTool)
   - Download [Unity](https://store.unity.com)
   - Open the project with Unity (Compatible from Unity 2017.1 version)
   - Open sample package: unzip [DeLighting-Tool-Data-Rock01.zip] (https://github.com/Unity-Technologies/DeLightingTool/blob/master/Documentation/DeLighting-Tool-Data-Rock01.zip) and import DeLighting-Tool-Data-Rock01.unityPackage
