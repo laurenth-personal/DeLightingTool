@@ -24,6 +24,7 @@ Please follow the instructions:
 - open Window/Package Management/Package Manager
 - in the left column, select "my registries / Open UPM"
 - In the second column you will see the packages available from this registry. Install the Unity Delighting Tool package.
+- The sample data is available in the sample tab of the package in package manager
 
 
 ## Old instructions
